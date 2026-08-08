@@ -21,3 +21,11 @@ The script utilizes a state tracking flag file (`screen_toggle_flag.dat`).
 * **`SWITCH PRIMARY MONITORS_V3.cmd`**
   * A multi-monitor switch that writes the tracking `.dat` file directly to the root of the script folder to prevent accidental cleanups.
   * *Note: Cannot be used on locked USB drives or restricted folders that do not grant write permissions.*
+
+## How to Customize (For 3+ Monitors)
+If your computer assigns a different ID to your secondary monitors (for example, if your second monitor is registered as `DISPLAY3` instead of `DISPLAY2`), the script is completely editable. 
+
+1. Right-click the `.cmd` file and select **Edit** (or open it in Notepad).
+2. Look for the `\\.\DISPLAY2` string inside the code.
+3. Replace it with your specific monitor path (e.g., `\\.\DISPLAY3`) as shown inside the MultiMonitorTool visual user interface.
+4. Save the file and run it.
