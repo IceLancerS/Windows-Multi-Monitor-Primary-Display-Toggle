@@ -29,3 +29,9 @@ If your computer assigns a different ID to your secondary monitors (for example,
 2. Look for the `\\.\DISPLAY2` string inside the code.
 3. Replace it with your specific monitor path (e.g., `\\.\DISPLAY3`) as shown inside the MultiMonitorTool visual user interface.
 4. Save the file and run it.
+
+## How to Pin to Taskbar (Silent Execution)
+Windows does not allow direct pinning of `.cmd` or `.bat` files. To create a clickable, silent shortcut:
+1. Use a tool like **Bat To Exe Converter** to turn your script into an `.exe`.
+2. Select the **"Invisible/Silent"** option to prevent a command window from appearing.
+3. Right-click the resulting `.exe` and choose **Pin to taskbar**.
